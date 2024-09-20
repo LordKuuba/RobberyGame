@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 1564493545058395864}
   - component: {fileID: 387724978137786559}
   - component: {fileID: 655145172971671144}
+  - component: {fileID: 3391540651552718123}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -69,7 +70,7 @@ MonoBehaviour:
   m_cameraPrefab: {fileID: 1070286082398796171, guid: 7d896539858161948825d8842d835cfa, type: 3}
   m_playerRotation: {fileID: 5373763721092462792}
   m_playerKeyInteraction: {fileID: 8768823077998610624}
-  m_playerCraftMenu: {fileID: 7524048204396211258}
+  m_playerCraftMenu: {fileID: 0}
   m_playerCanvas: {fileID: 2520199721046930621}
 --- !u!114 &2483345797803583126
 MonoBehaviour:
@@ -262,6 +263,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3391540651552718123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419028195345586623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49972a74305534a4ba84bc4c2953ed5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  m_craftRecipeUIPrefab: {fileID: 1969444746852545530, guid: 818af8f7fb2650541bcf6df54fdd08ea, type: 3}
+  m_craftRecipesTransform: {fileID: 7524048203286846123}
+  m_displaySlotPrefab: {fileID: 6131025585448833412, guid: 125c665c976e2864b8a7005ff2fa6c57, type: 3}
+  m_inputIngridientsParent: {fileID: 7524048204401060045}
+  m_outputItemSlot: {fileID: 867747797707814198}
+  m_playersInventory: {fileID: 6143463726983566582}
 --- !u!1 &497220138853750388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1916,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7524048204396211258}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CraftMenu, Assembly-CSharp
         m_MethodName: Craft
         m_Mode: 1
@@ -2161,7 +2183,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7524048204396211259}
-  - component: {fileID: 7524048204396211258}
   m_Layer: 5
   m_Name: Crafting Menu
   m_TagString: Untagged
@@ -2191,27 +2212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1171.0566, y: 599.8265}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7524048204396211258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7524048204396211260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49972a74305534a4ba84bc4c2953ed5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  m_craftRecipeUIPrefab: {fileID: 1969444746852545530, guid: 818af8f7fb2650541bcf6df54fdd08ea, type: 3}
-  m_craftRecipesTransform: {fileID: 7524048203286846123}
-  m_displaySlotPrefab: {fileID: 6131025585448833412, guid: 125c665c976e2864b8a7005ff2fa6c57, type: 3}
-  m_inputIngridientsParent: {fileID: 7524048204401060045}
-  m_outputItemSlot: {fileID: 867747797707814198}
-  m_playersInventory: {fileID: 6143463726983566582}
 --- !u!1 &7524048204401060046
 GameObject:
   m_ObjectHideFlags: 0
