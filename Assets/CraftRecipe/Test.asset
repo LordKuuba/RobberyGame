@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9f61048502bc0488afc0d3a361f4c1, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  m_itemToGive:
+    m_itemParameter: {fileID: 11400000, guid: 948ef693763ce6947a90f524b41a585b, type: 2}
+    m_itemPrefab: {fileID: 5411707429781405735, guid: 0c96f4eaa70399f47bcb394c2d7a7aad, type: 3}
+  m_itemsToCraft:
+  - {fileID: 11400000, guid: 5848083eadd234e42ad4880e5ee0128e, type: 2}
