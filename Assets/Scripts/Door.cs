@@ -82,7 +82,7 @@ public class Door : Interactable
             {
                 if (m_lockOnDoor.NeedToDestroyItemAfterUse)
                 {
-                    g_playerWhoInteracted.PlayerInventory.DestroyCurrentItemInHand();
+                    g_playerWhoInteracted.PlayerInventory.DestroyItemInSlot(g_playerWhoInteracted.PlayerInventory.CurrentlySelectedSlotIndex);
                 }
 
                 m_lockOnDoor.RemoveLockModel();

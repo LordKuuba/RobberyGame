@@ -26,9 +26,9 @@ public class InventoryUI : MonoBehaviour
         p_listOfUISlots[slotIndex].UpdateSlotImage(itemParametersToPass.ItemUISprite);
     }
 
-    public void ClearCurrentSlot()
+    public void ClearCurrentSlot(int index)
     {
-        p_listOfUISlots[m_inventory.CurrentlySelectedSlotIndex].UpdateSlotImage(null);
+        p_listOfUISlots[index].UpdateSlotImage(null);
     }
 
     public void UpdateSelectedUiSlot()
